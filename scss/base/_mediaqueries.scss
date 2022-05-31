@@ -1,0 +1,53 @@
+
+@media screen and (min-width:600px) {
+    //index
+    .mainIndex {
+        padding: 1em;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 0.2fr 1fr 1fr;
+            gap: 0px 0px 0px;
+            grid-template-areas:
+                "titulo titulo titulo"
+                "pUno pUno imgUno"
+                "pDos pDos imgDos";
+            .tituloIndex {
+                grid-area: titulo;
+                font-size: 2rem;
+            }
+            .pUno {
+                grid-area: pUno;
+            }
+            .pDos {
+                grid-area: pDos;
+            }
+            .imgUno {
+                grid-area: imgUno;
+            }
+        
+            .imgDos {
+                grid-area: imgDos;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    //index
+    .mainIndex {
+        grid-template-columns: 1fr 1fr;
+        .container {
+            justify-content: start;
+            font-size: 1.2rem;
+        }
+        .contenedorDosIndex {
+            justify-content: end;
+            .fotoDosIndex{
+                display: block;
+                height: 15rem;
+                width: 30rem;
+            }
+        }
+    }
+}
